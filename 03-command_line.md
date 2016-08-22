@@ -13,10 +13,14 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > pwd print working directory  
-> > ls list files in current directory  
->> cd ~ takes you home
-
+>> pwd print working directory  
+>> ls list files in current directory  
+>> cd ~ takes you home  
+>> pushd brings you to a directory (ready to go back)  
+>> popd brings you back to where you last performed pushd  
+>> less view a file (press q to quit)  
+>> cat stream a file (without having to press q to quit)  
+>>
 ---
 
 ###Q2.  List Files in Unix   
