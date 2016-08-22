@@ -15,6 +15,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > pwd print working directory  
 > > ls list files in current directory  
+>> cd ~ takes you home
 
 ---
 
