@@ -60,7 +60,19 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>You simply type vim into the terminal to open it and start a new file.
+
+You can pass a filename as an option and it will open that file, e.g. vim main.c. You can open multiple files by passing multiple file arguments.
+
+Vim has different modes, unlike most editors you have probably used. You begin in NORMAL mode, which is where you will spend most of your time once you become familiar with vim.
+
+To return to NORMAL mode after changing to a different mode, press Esc. It's a good idea to map your Caps Lock key to Esc, as it's closer and nobody really uses the Caps Lock key.
+
+The first mode to try is INSERT mode, which is entered with a for append after cursor, or i for insert before cursor.
+
+To enter VISUAL mode, where you can select text, use v. There are many other variants of this mode, which you will discover as you learn more about vim.
+
+To save your file, ensure you're in NORMAL mode and then enter the command :w. When you press :, you will see your command appear in the bottom status bar. To save and exit, use :x. To quit without saving, use :q. If you had made a change you wanted to discard, use :q!.
 
 --
 
@@ -69,5 +81,3 @@ What terminal editor will you use? How did you make your decision?
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
