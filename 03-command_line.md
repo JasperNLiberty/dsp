@@ -20,7 +20,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 >> popd brings you back to where you last performed pushd  
 >> less view a file (press q to quit)  
 >> cat stream a file (without having to press q to quit)  
->>
+>> rm remove a file (permanently; not into trashcan)
 ---
 
 ###Q2.  List Files in Unix   

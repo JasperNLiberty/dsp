@@ -80,4 +80,7 @@ To save your file, ensure you're in NORMAL mode and then enter the command :w. W
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Atom
+
+It integrates well with git.
+It provides many customization options.
