@@ -62,7 +62,7 @@ What terminal editor will you use? How did you make your decision?
 
 >>You simply type vim into the terminal to open it and start a new file.
 
-You can pass a filename as an option and it will open that file, e.g. vim main.c. You can open multiple files by passing multiple file arguments.
+>>You can pass a filename as an option and it will open that file, e.g. vim main.c. You can open multiple files by passing multiple file arguments.  
 
 Vim has different modes, unlike most editors you have probably used. You begin in NORMAL mode, which is where you will spend most of your time once you become familiar with vim.
 
