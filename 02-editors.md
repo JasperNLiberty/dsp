@@ -82,8 +82,8 @@ What graphical editor will you use? How did you make your decision? What are som
 
 >> Atom
 
-It integrates well with git.
-It provides many customization options.
-install "script" package, cmd + i to run the script within the editor
-cmd + shift + p: provides list of functions and shortcuts
-"git plus" package for integration to git  
+>>It integrates well with git.
+>>It provides many customization options.
+>>install "script" package, cmd + i to run the script within the editor
+>>cmd + shift + p: provides list of functions and shortcuts; press Return to execute those functions
+>>"git plus" package for integration to git  
