@@ -89,3 +89,6 @@ What graphical editor will you use? How did you make your decision? What are som
 >>"git plus" package for integration to git  
 >> the git information (including github login credentials) is stored in .git hidden folder  
 >> "autocompletion-python" package enables TAB suggestion
+>> fn + delete : delete right of cursor  
+>> option + delete : delete by word
+>> cmd + delete: delete one line

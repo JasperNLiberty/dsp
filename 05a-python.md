@@ -25,13 +25,26 @@ How are Python lists and sets similar and different? Give examples of using both
 >> set forbids duplicates; list does not;  
 >> set does not keep order; list does;  
 >> sets are faster from hashing
+
+# tuple ()
+tuple1 = ('a', 'b', 'c', 'a', 'c')
+print(tuple1, type(tuple1))
+
+# set {}
+set1 = {'a', 'b', 'c', 'a', 'c'}
+print(set1, type(set1))
+
+# list []
+list1 = ['a', 'b', 'c', 'a', 'c']
+print(list1, type(list1))
+
 ---
 
 ###Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lambda defines a function without explicitly giving it a name
 
 ---
 
@@ -39,8 +52,22 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+list Comprehension
+noprimes = [j for i in range(2, 8) for j in range(i*2, 50, i)]
+primes = [x for x in range (2, 50) if x not in noprimes]
+print(primes)
 
+set Comprehension
+set2 = {j for i in range(2, 8) for j in range(i*2, 50, i)}
+print(set2)
+
+dictionary Comprehension
+dict2 = {n : n**2 for n in range(5)}
+print(dict2)
+
+squares = map(lambda x: x**3, range(10))
+ssquares = filter(lambda x: x < 100, squares)
+print(ssquares)
 ---
 
 ###Complete the following problems by editing the files below:
