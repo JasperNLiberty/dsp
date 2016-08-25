@@ -88,3 +88,4 @@ What graphical editor will you use? How did you make your decision? What are som
 >>cmd + shift + p: provides list of functions and shortcuts; press Return to execute those functions  
 >>"git plus" package for integration to git  
 >> the git information (including github login credentials) is stored in .git hidden folder  
+>> "autocompletion-python" package enables TAB suggestion
