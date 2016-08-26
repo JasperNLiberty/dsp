@@ -15,6 +15,8 @@ How are Python lists and tuples similar and different? Which will work as keys i
 >> tuples are immutable, lists can be edited
 >> tuples will work as keys in dictionaries  
 
+
+
 ---
 
 ###Q2. Lists &amp; Sets
@@ -25,6 +27,19 @@ How are Python lists and sets similar and different? Give examples of using both
 >> set forbids duplicates; list does not;  
 >> set does not keep order; list does;  
 >> sets are faster from hashing
+
+set2 = {21, 34, 5432, 5482342}
+# not ordered
+for set2a in set2:
+    print(set2a)
+
+list2 = [21, 34, 5432, 5482342]
+# ordered
+for list2a in list2:
+    print(list2a)
+
+
+
 
 # tuple ()
 tuple1 = ('a', 'b', 'c', 'a', 'c')
@@ -81,7 +96,11 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+date_object1 = datetime.strptime(date_start, '%m-%d-%Y')
+date_object2 = datetime.strptime(date_stop, '%m-%d-%Y')
+
+date_passed = date_object2 - date_object1
+print(date_passed)
 
 b.  
 ```
@@ -89,7 +108,11 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+date_object1 = datetime.strptime(date_start, '%m%d%Y')
+date_object2 = datetime.strptime(date_stop, '%m%d%Y')
+
+date_passed = date_object2 - date_object1
+print(date_passed)
 
 c.  
 ```
@@ -97,7 +120,11 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+date_object1 = datetime.strptime(date_start, '%d-%b-%Y')
+date_object2 = datetime.strptime(date_stop, '%d-%b-%Y')
+
+date_passed = date_object2 - date_object1
+print(date_passed)
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
