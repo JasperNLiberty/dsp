@@ -18,8 +18,14 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if (count < 10):
+        return ('Number of donuts: ' + str(count))
+    else:
+        return ('Number of donuts: many')
     raise NotImplementedError
 
+print(donuts(4))
+print(donuts(40))
 
 def both_ends(s):
     """
@@ -37,8 +43,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if (len(s) < 2):
+        return ''
+    else:
+        return (s[:2] + s[-2:])
     raise NotImplementedError
-
+print(both_ends('spring'))
 
 def fix_start(s):
     """
@@ -56,8 +66,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    FC = s[0]
+    temp = ([x if x!=FC else '*' for x in s ])
+    temp[0] = FC
+    return ''.join(temp)
     raise NotImplementedError
 
+print(fix_start('babble'))
 
 def mix_up(a, b):
     """
@@ -74,8 +89,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    return(b[:2] + a[2:] + ' ' + a[:2] + b[2:])
     raise NotImplementedError
-
+print(mix_up('pezzy', 'firm'))
 
 def verbing(s):
     """
@@ -91,8 +107,16 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    if len(s) > 2:
+        if s[-3:] == 'ing':
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    else:
+        return s
     raise NotImplementedError
 
+print(verbing('do'))
 
 def not_bad(s):
     """
@@ -111,8 +135,18 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    n1 = s.find('not')
+    b1 = s.find('bad')
+    if n1 < b1:
+        return s[:n1] + 'good' + s[b1+3:]
+    else:
+        return s
     raise NotImplementedError
 
+print(not_bad('This movie is not so bad'))
+print(not_bad('This dinner is not that bad!'))
+print(not_bad('This tea is not hot'))
+print(not_bad("It's bad yet not"))
 
 def front_back(a, b):
     """
@@ -130,4 +164,23 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+
+    if len(a) // 2 != len(a) / 2.:
+        a_stop = len(a) // 2 + 1
+    else:
+        a_stop = len(a) / 2
+
+    if len(b) // 2 != len(b) / 2.:
+        b_stop = len(b) // 2 + 1
+    else:
+        b_stop = len(b) / 2
+
+    a_frt = a[:a_stop]
+    a_bak = a[a_stop:]
+    b_frt = b[:b_stop]
+    b_bak = b[b_stop:]
+
+    return(a_frt + b_frt + a_bak + b_bak)
     raise NotImplementedError
+
+print(front_back('Kitten', 'Donut'))
