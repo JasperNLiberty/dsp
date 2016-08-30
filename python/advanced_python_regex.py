@@ -24,7 +24,16 @@ for elem in ls:
 # [^\w]: ^ inside [] means "NOT"
 # | means "OR"
 # \s any whitespace
-degree1 = [re.sub(r'[^\w|^\s]', '',deg1) for deg1 in degree]
 
-print(degree)
-print(degree1)
+# add space to separate
+degree0 = [(' ' + deg) for deg in degree]
+degree1 = [re.sub(r'[^\w|^\s]', '',deg1) for deg1 in degree0]
+
+#print(degree)
+#print(degree1)
+
+degree2 = ''.join(degree1)
+#print(degree2)
+
+degree3 = degree2.split()
+print(degree3)
