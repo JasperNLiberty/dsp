@@ -20,6 +20,9 @@ for elem in ls:
     title.append(elem_list[2])
     email.append(elem_list[3])
 
+
+# 1 degree problem
+
 # remove non-alphanumeric characters in degree
 # [^\w]: ^ inside [] means "NOT"
 # | means "OR"
@@ -44,6 +47,38 @@ degree3 = degree2.split()
 
 # use set to find unique values
 unique_degree = set(degree3)
-unique_count = [(unique, degree3.count(unique)) for unique in unique_degree]
+unique_degree_count = [(unique, degree3.count(unique)) for unique in unique_degree]
 
-print(unique_count)
+print(unique_degree_count)
+
+
+
+# 2 title problem
+title.pop(0)
+#print(title)
+
+unique_title = set(title)
+unique_title_count = [(unique, title.count(unique)) for unique in unique_title]
+
+print(unique_title_count)
+
+
+# 3 email address problem
+# print(data)
+
+# [\w|\.] looks for either an alphanumeric OR a dot
+# [\w|\.]+ looks for any number of above
+search_email = re.findall('[\w|\.]+@[\w|\.]+', data)
+print(search_email)
+
+
+# 4 email domain problem
+search_domain = re.findall('@[\w|\.]+', data)
+
+
+domains = [search_domain1[1:] for search_domain1 in search_domain]
+#print(domains)
+
+unique_domain = set(domains)
+unique_domain_count = [(unique, domains.count(unique)) for unique in unique_domain]
+print(unique_domain_count)
