@@ -25,15 +25,25 @@ for elem in ls:
 # | means "OR"
 # \s any whitespace
 
-# add space to separate
+# add space in front of each entry to separate
 degree0 = [(' ' + deg) for deg in degree]
+
+# remove any character that is not alphanumeric or whitespace
 degree1 = [re.sub(r'[^\w|^\s]', '',deg1) for deg1 in degree0]
 
-#print(degree)
-#print(degree1)
+# remove the first element "degree"
+degree1.pop(0)
 
+# create a long string
 degree2 = ''.join(degree1)
 #print(degree2)
 
+# separate string into list
 degree3 = degree2.split()
-print(degree3)
+#print(degree3)
+
+# use set to find unique values
+unique_degree = set(degree3)
+unique_count = [(unique, degree3.count(unique)) for unique in unique_degree]
+
+print(unique_count)
