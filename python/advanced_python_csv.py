@@ -10,4 +10,4 @@ print(search_email)
 with open('/users/sausageparty/dsp/python/emails.csv', 'wb') as fp:
     wr = csv.writer(fp)
     for se in search_email:
-        wr.writerow([se])
+        wr.writerow([se,])
