@@ -40,7 +40,7 @@ sample_keys = faculty_dict.keys()[:3]
 #print(sample_keys)
 for sk in sample_keys:
     print(sk, faculty_dict[sk])
-    print('\n')
+    print('\r')
 
 
 #---Q7 use first and last name: professor_dict
@@ -69,5 +69,5 @@ all_keys3 = [ak2[1] for ak2 in all_keys2]
 
 for ak3 in all_keys3:
     print(ak3, professor_dict[ak3])
-
+    print('\r')
 print('\n')
