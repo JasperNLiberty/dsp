@@ -70,8 +70,13 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
+
 ('Putt', ['PhDScD', 'Professor of Biostatistics', 'mputt@mail.med.upenn.edu'])
+
+
 ('Feng', ['Ph.D', 'Assistant Professor of Biostatistics', 'ruifeng@upenn.edu'])
+
+
 ('Bilker', ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu'])
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:

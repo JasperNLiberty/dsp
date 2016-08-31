@@ -40,8 +40,7 @@ sample_keys = faculty_dict.keys()[:3]
 #print(sample_keys)
 for sk in sample_keys:
     print(sk, faculty_dict[sk])
-
-print('\n')
+    print('\n')
 
 
 #---Q7 use first and last name: professor_dict
