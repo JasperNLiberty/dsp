@@ -3,8 +3,6 @@ import re
 with open('/users/sausageparty/dsp/python/faculty.csv') as f:
     data = f.read()
 
-
-
 ls = data.splitlines()
 
 name = []
@@ -45,10 +43,13 @@ degree2 = ''.join(degree1)
 degree3 = degree2.split()
 #print(degree3)
 
-# use set to find unique values
-unique_degree = set(degree3)
-unique_degree_count = [(unique, degree3.count(unique)) for unique in unique_degree]
+# use set to find unique values -> replaced by use of dictionary(histogram fn)
+#unique_degree = set(degree3)
+#unique_degree_count = [(unique, degree3.count(unique)) for unique in unique_degree]
 
+#print(unique_degree_count)
+
+unique_degree_count = histogram(degree3)
 print(unique_degree_count)
 
 
@@ -57,10 +58,8 @@ print(unique_degree_count)
 title.pop(0)
 #print(title)
 
-unique_title = set(title)
-unique_title_count = [(unique, title.count(unique)) for unique in unique_title]
-
-print(unique_title_count)
+title_count = histogram(title)
+print(title_count)
 
 
 # 3 email address problem
@@ -79,6 +78,17 @@ search_domain = re.findall('@[\w|\.]+', data)
 domains = [search_domain1[1:] for search_domain1 in search_domain]
 #print(domains)
 
-unique_domain = set(domains)
-unique_domain_count = [(unique, domains.count(unique)) for unique in unique_domain]
+#unique_domain = set(domains)
+#unique_domain_count = [(unique, domains.count(unique)) for unique in unique_domain]
+unique_domain_count = histogram(domains)
 print(unique_domain_count)
+
+
+def histogram(s):
+    d = dict()
+    for c in s:
+        if c not in d:
+            d[c] = 1
+        else:
+            d[c] += 1
+    return d
