@@ -57,6 +57,7 @@ for z7 in zipped7:
 professor_keys = professor_dict.keys()[:3]
 for pk in professor_keys:
     print(pk, professor_dict[pk])
+    print('\r')
 
 print('\n')
 
