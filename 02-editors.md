@@ -93,3 +93,13 @@ What graphical editor will you use? How did you make your decision? What are som
 >> fn + delete : delete right of cursor  
 >> option + delete : delete by word
 >> cmd + delete: delete one line
+
+>> install anaconda
+>> to run ipynb probably need the following
+http://stackoverflow.com/questions/28831854/how-do-i-add-python3-kernel-to-jupyter-ipython
+
+$ conda create -n py3k python=3 anaconda
+
+$ source activate py3k
+
+$ ipython kernelspec install-self
