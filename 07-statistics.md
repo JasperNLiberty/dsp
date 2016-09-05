@@ -89,7 +89,7 @@ P(B/D) = P(B) / (P(B)+ P(A) X 1/2)
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
-<img src="//imgs.xkcd.com/comics/frequentists vs bayesians.png" title="stats"/>](http://xkcd.com/1132/)
+<img src="http://imgs.xkcd.com/comics/frequentists_vs_bayesians.png" title="stats"/>](http://xkcd.com/1132/)
 
 ---
 
