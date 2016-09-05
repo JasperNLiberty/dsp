@@ -72,18 +72,18 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >>
 
-A: Fraternal twin
-B: Identical twin
+>>A: Fraternal twin  
+>>B: Identical twin  
 
-P(A) = 1/125 / (1/125 + 1/300) = 0.7059
-P(B) = 1/300 / (1/125 + 1/300) = 0.2941
-                              PRIOR P(A/B)    LIKELIHOOD P(D|A/B)   PRODUCT
-Elvis Fraternal P(A/D)     :  P(A)            1/2                   P(A) X 1/2
-Elvis identical P(B/D)     :  P(B)            1                     P(B)
+>>P(A) = 1/125 / (1/125 + 1/300) = 0.7059  
+>>P(B) = 1/300 / (1/125 + 1/300) = 0.2941  
+>>                              PRIOR P(A/B)    LIKELIHOOD P(D|A/B)   PRODUCT  
+>>Elvis Fraternal P(A/D)     :  P(A)            1/2                   P(A) X 1/2  
+>>Elvis identical P(B/D)     :  P(B)            1                     P(B)  
 
-P(B/D) = P(B) / (P(B)+ P(A) X 1/2)
-       = 0.2941 / (0.2941 + 0.7059 X 0.5)
-       = 0.4545
+>>P(B/D) = P(B) / (P(B)+ P(A) X 1/2)  
+>>       = 0.2941 / (0.2941 + 0.7059 X 0.5)  
+>>       = 0.4545  
 ---
 
 ###Q6. Bayesian &amp; Frequentist Comparison  
